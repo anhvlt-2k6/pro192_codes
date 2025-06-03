@@ -21,7 +21,6 @@ public class Q1 {
     String[] Values = new String[5];
     int sum = 0;
     String result = "";
- 
     // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
     // --START FIXED PART--------------------------
     String fi, fo;
@@ -77,6 +76,8 @@ public class Q1 {
                 System.out.println(e.getMessage() + "\n");
             }
         }
+        
+        result = String.format("%d", sum);
         // ALGORITHM - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
         
         // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
