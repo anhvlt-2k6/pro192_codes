@@ -50,6 +50,7 @@ public class Q1 {
             for (int i = 0; i < n; i++) {
                 Values[i] = sc.nextLine();
             }
+            
             // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
             // --START FIXED PART--------------------------
             sc.close();
@@ -70,7 +71,19 @@ public class Q1 {
         // --END FIXED PART----------------------------
 
         // ALGORITHM - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
-        
+        for (int j = 0; j < n; j++) {
+            int a = Integer.parseInt(Values[j]);
+            
+            if (a < 0) {
+                result += "Negative\n";
+            } else if (a == 0) {
+                result += "Zero\n";
+            } else if (a > 0) {
+                result += "Positive\n";
+            } else {
+                continue;
+            }
+        }
         // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
         // --START FIXED PART--------------------------
     }

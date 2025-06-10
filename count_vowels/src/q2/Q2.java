@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package q1;
+package q2;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Q1 {
+public class Q2 {
     // Change the name of input and output file based on practical paper
     String inputFile = "input.txt";
     String outputFile = "output.txt";
@@ -44,12 +44,14 @@ public class Q1 {
             // --END FIXED PART----------------------------
 
             // INPUT - @STUDENT: ADD YOUR CODE FOR INPUT HERE:
+            
             n = Integer.parseInt(sc.nextLine());
             Values = new String[n];
             
             for (int i = 0; i < n; i++) {
                 Values[i] = sc.nextLine();
             }
+            
             // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
             // --START FIXED PART--------------------------
             sc.close();
@@ -70,7 +72,18 @@ public class Q1 {
         // --END FIXED PART----------------------------
 
         // ALGORITHM - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
-        
+        for (int i = 0; i < n; i++) {
+            String a = Values[i].toLowerCase();
+            int count = 0;
+            
+            for (int j = 0; j < a.length(); j++) {
+                if (a.charAt(j) == 'a'  || a.charAt(j) == 'e'|| a.charAt(j) == 'i' || a.charAt(j) == 'o' || a.charAt(j) == 'u') {
+                    count++;
+                }
+            }
+            
+            result += (count) + "\n";
+        }
         // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
         // --START FIXED PART--------------------------
     }
@@ -85,6 +98,7 @@ public class Q1 {
 
             // OUTPUT - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
             fw.write(result);
+            
             // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
             // --START FIXED PART--------------------------
             fw.flush();
@@ -99,7 +113,7 @@ public class Q1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Q1 q = new Q1();
+        Q2 q = new Q2();
         q.setFile(args);
         q.read();
         q.solve();

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package q1;
+package q3;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Q1 {
+public class Q3 {
     // Change the name of input and output file based on practical paper
     String inputFile = "input.txt";
     String outputFile = "output.txt";
@@ -21,6 +21,7 @@ public class Q1 {
     int n;
     String[] Values;
     String result = "";
+
 
     // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
     // --START FIXED PART--------------------------
@@ -50,6 +51,7 @@ public class Q1 {
             for (int i = 0; i < n; i++) {
                 Values[i] = sc.nextLine();
             }
+            
             // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
             // --START FIXED PART--------------------------
             sc.close();
@@ -60,7 +62,7 @@ public class Q1 {
     // --END FIXED PART----------------------------
 
     // ALGORITHM - @STUDENT: ADD YOUROWN METHODS HERE (IF NEED):
-
+    
     // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
     // --START FIXED PART--------------------------
     /**
@@ -70,7 +72,16 @@ public class Q1 {
         // --END FIXED PART----------------------------
 
         // ALGORITHM - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
-        
+        for (int i = 0; i < n; i++) {
+            int a = Integer.parseInt(Values[i]);
+            int factorial = 1;
+            for (int j = 1; j <= a; j++) {
+                factorial = factorial * j;
+            }
+            
+            result += factorial + "\n";
+        }
+
         // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
         // --START FIXED PART--------------------------
     }
@@ -85,6 +96,7 @@ public class Q1 {
 
             // OUTPUT - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
             fw.write(result);
+            
             // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
             // --START FIXED PART--------------------------
             fw.flush();
@@ -99,7 +111,7 @@ public class Q1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Q1 q = new Q1();
+        Q3 q = new Q3();
         q.setFile(args);
         q.read();
         q.solve();

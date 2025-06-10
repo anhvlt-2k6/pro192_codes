@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package q1;
+package q4;
 
 import java.io.File;
 import java.io.FileNotFoundException;
@@ -12,7 +12,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Q1 {
+public class Q4 {
     // Change the name of input and output file based on practical paper
     String inputFile = "input.txt";
     String outputFile = "output.txt";
@@ -70,7 +70,20 @@ public class Q1 {
         // --END FIXED PART----------------------------
 
         // ALGORITHM - @STUDENT: ADD YOUR CODE FOR OUTPUT HERE:
-        
+        for (int i = 0; i < n; i++) {
+            String a = Values[i].toLowerCase().replace(" ", "");
+            String b = "";
+            
+           for (int j = 0; j < a.length(); j++) {
+               b = a.charAt(j) + b;
+           }
+           
+           if (a.compareTo(b) == 0) {
+               result += "Palindrome\n";
+           } else {
+               result += "Not Palindrome\n";
+           }
+        }
         // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
         // --START FIXED PART--------------------------
     }
@@ -99,7 +112,7 @@ public class Q1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Q1 q = new Q1();
+        Q4 q = new Q4();
         q.setFile(args);
         q.read();
         q.solve();
