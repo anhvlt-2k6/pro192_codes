@@ -1,2 +1,5 @@
 # No mac
 .DS_Store
+/.topics/JavaFoundation/nbproject/private/
+/.topics/JavaEncapsulation/nbproject/private/
+/.topics/JavaPolymorphism/nbproject/private/
