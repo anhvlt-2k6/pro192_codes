@@ -7,7 +7,7 @@ public class Car {
     private int yearofRelease;
     
     // No-arg constructor, default
-    public Car() {
+    Car() {
         this.manufacture = "";
         this.horsePower = 100;
         this.yearofRelease = 2000;
