@@ -1,0 +1,5 @@
+ short int long
+ int long
+ int long
+Cannot be fitted anywhere
+ long
