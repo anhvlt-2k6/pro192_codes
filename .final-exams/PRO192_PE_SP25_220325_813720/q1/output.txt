@@ -1,0 +1,20 @@
+---PrintBookCategory---
+Empty
+---
+---PrintBook---
+Empty
+---
+(textbook, sach giao khoa) is added
+(reference, sach tham khao) is added
+(Lap trinh JAVA) is added
+---PrintBook---
+(Lap trinh JAVA, Pham Quang Dung,2021) : [sach tham khao]
+---
+---PrintBookCategory---
+(textbook, sach giao khoa)
+(reference, sach tham khao)
+---
+---SearchBook---
+(Lap trinh JAVA, Pham Quang Dung,2021) : [sach tham khao]
+---
+* Remove all books
