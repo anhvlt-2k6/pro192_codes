@@ -1,0 +1,4 @@
+4 3
+Lion Simba
+Elephant Bobo
+Lion Kovu

@@ -1,0 +1,8 @@
+6
+Urban 1 Hanoi 35.5 60
+Rural 2 DakLak 30.0 true
+Urban 3 HCMC 36.1 70
+Rural 4 FPT 99.9 true
+PrintAll
+PrintByType Urban
+PrintByType Rural

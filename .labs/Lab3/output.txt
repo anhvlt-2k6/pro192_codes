@@ -1,0 +1,12 @@
+Add urban: 1 Hanoi
+Add rural: 2 DakLak
+Add urban: 3 HCMC
+Add rural: 4 FPT <- Chay di cac chau oi, luis gala day ;-;
+--PrintAll--
+UrbanWeather [1] Hanoi: Temp=35.5°C, Humidity=60%
+RuralWeather [2] DakLak: Temp=30.0°C, StormAlert=true
+UrbanWeather [3] HCMC: Temp=36.1°C, Humidity=70%
+RuralWeather [4] FPT: Temp=99.9°C, StormAlert=true
+--PrintByType: Urban--
+UrbanWeather [1] Hanoi: Temp=35.5°C, Humidity=60%
+UrbanWeather [3] HCMC: Temp=36.1°C, Humidity=70%

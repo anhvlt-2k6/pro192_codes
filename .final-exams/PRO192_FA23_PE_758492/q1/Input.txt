@@ -1,0 +1,10 @@
+9
+Circle 0 7 3
+Show
+Circle -5 2 4
+Clear
+Circle 1 -8 2
+Circle -6 10 1
+Show
+Circle 3 5 9
+Sort

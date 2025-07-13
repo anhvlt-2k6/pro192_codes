@@ -1,0 +1,18 @@
+Add Circle (0,7,3.00)
++++Show+++
+Circle{Center{x=0,y=7},radius=3.00,diameter=6.00,circumference=18.85,area=28.27}
+++++++++++
+Add Circle (-5,2,4.00)
+@ Remove all circle
+Add Circle (1,-8,2.00)
+Add Circle (-6,10,1.00)
++++Show+++
+Circle{Center{x=1,y=-8},radius=2.00,diameter=4.00,circumference=12.57,area=12.57}
+Circle{Center{x=-6,y=10},radius=1.00,diameter=2.00,circumference=6.28,area=3.14}
+++++++++++
+Add Circle (3,5,9.00)
+***Sort***
+Circle{Center{x=-6,y=10},radius=1.00,diameter=2.00,circumference=6.28,area=3.14}
+Circle{Center{x=1,y=-8},radius=2.00,diameter=4.00,circumference=12.57,area=12.57}
+Circle{Center{x=3,y=5},radius=9.00,diameter=18.00,circumference=56.55,area=254.47}
+**********
