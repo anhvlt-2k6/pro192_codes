@@ -1,3 +1,0 @@
-The string 0-th is: 42
-The string 1-th is: 100
-The string 2-th is: 125

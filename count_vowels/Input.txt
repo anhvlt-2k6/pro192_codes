@@ -1,4 +1,0 @@
-3
-Hello World
-Java Programming
-This is a test

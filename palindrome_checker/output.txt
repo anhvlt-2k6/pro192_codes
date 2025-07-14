@@ -1,4 +1,0 @@
-Palindrome
-Palindrome
-Not Palindrome
-Palindrome

@@ -1,5 +1,0 @@
-Positive
-Negative
-Zero
-Positive
-Negative
