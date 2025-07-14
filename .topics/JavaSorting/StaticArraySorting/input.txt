@@ -1,0 +1,13 @@
+# Sorting the array from smallest to biggest (in static array)
+1
+-2
+3
+4
+-5
+6
+1
+4
+#51
+5
+153
+3
