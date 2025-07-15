@@ -1,0 +1,13 @@
+# Comments means disabled
+ADD 1 gTLD example.com 365 Managed_By_ICANN
+ADD 2 ccTLD fpt.edu.vn 30 Managed_By_FPT
+ADD 3 sTLD harvard.edu 900 In_Harvard_with_Love
+ADD 4 mTLD cloudflare.com 10240 CF_loves_everyone
+SHOW ALL
+CHANGE WHOIS 3 Harvard_loves_researchers_and_students
+CHANGE EXPDATE 2 180
+SHOW 3
+REMOVE 4
+SORT
+SHOW ALL
+REMOVE ALL
