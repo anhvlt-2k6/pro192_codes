@@ -72,3 +72,6 @@
 /.topics/JavaSorting/StaticArraySorting/build
 /.topics/JavaSorting/DynamicArraySorting/nbproject/private/
 /.topics/JavaSorting/DynamicArraySorting/build/
+/.labs/Lab5/build/
+/.labs/Lab5/dist/
+/.labs/Lab5/nbproject/private/
