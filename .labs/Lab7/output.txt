@@ -1,0 +1,6 @@
+Add Light: L9
+Add Thermostat: T3
+150 brightness value 150 is invalid!
+L9 brightness set to 80
+40 temperature value 40 is invalid!
+T3 temperature set to 25

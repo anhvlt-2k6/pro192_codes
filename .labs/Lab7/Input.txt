@@ -1,0 +1,7 @@
+6
+Light L9
+Thermostat T3
+SetBrightness L9 150
+SetBrightness L9 80
+SetTemperature T3 40
+SetTemperature T3 25

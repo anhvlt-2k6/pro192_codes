@@ -1,0 +1,12 @@
+11
+Delivery R7 0 0
+Survey R8 1 1
+Move R7
+Rotate R7 RIGHT
+Move R7
+Move R7
+Rotate R8 LEFT
+Move R8
+Rotate R8 LEFT
+Move R8
+Report

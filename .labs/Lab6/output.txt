@@ -1,0 +1,13 @@
+Add DeliveryRobot: R7 at (0,0)
+Add SurveyRobot: R8 at (1,1)
+R7 moved to (0,2)
+R7 rotated to EAST
+R7 moved to (2,2)
+R7 moved to (4,2)
+R8 rotated to WEST
+R8 moved to (0,1)
+R8 rotated to SOUTH
+R8 moved to (0,0)
+--Report--
+R7 (Delivery): (4,2) facing EAST
+R8 (Survey): (0,0) facing SOUTH
