@@ -1,0 +1,12 @@
+Add new personal: 1 Read
+Add new work: 2 Submit
+Add new personal: 3 Jog
+3 is done!
+--PrintAll--
+Personal: [1] Read (Library) - Not Done
+Work: [2] Submit (ProjectB) - Not Done
+Personal: [3] Jog (Park) - Done
+1 is done!
+--PrintByType: Personal--
+Personal: [1] Read (Library) - Done
+Personal: [3] Jog (Park) - Done
