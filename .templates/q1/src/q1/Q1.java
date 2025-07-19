@@ -19,7 +19,7 @@ public class Q1 {
 
     // --VARIABLES - @STUDENT: DECLARE YOUR VARIABLES HERE:
     int n;
-    String[] Values;
+    String[] args;
     String result = "";
 
     // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
@@ -45,10 +45,10 @@ public class Q1 {
 
             // INPUT - @STUDENT: ADD YOUR CODE FOR INPUT HERE:
             n = Integer.parseInt(sc.nextLine());
-            Values = new String[n];
+            args = new String[n];
             
             for (int i = 0; i < n; i++) {
-                Values[i] = sc.nextLine();
+                args[i] = sc.nextLine();
             }
             // --FIXED PART - DO NOT EDIT ANY THINGS HERE--
             // --START FIXED PART--------------------------
