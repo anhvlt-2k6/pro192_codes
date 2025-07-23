@@ -26,8 +26,19 @@ public class FriendlyNPC extends GameObjects {
     /*
     Some friendly NPC open shops.
     */
-    
-    public int getItemInShop() {
+
+    @Override
+    public int getTypeofNPC() {
         return this.typeofNPC;
+    }
+    
+    @Override
+    public int getHp() {
+        return -1;
+    }
+
+    @Override
+    public void getAttack(int attack) {
+        
     }
 }

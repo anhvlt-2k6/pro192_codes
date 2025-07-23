@@ -68,6 +68,10 @@ public class MainCharacter {
     public ArrayList<String> getItems() {
         return this.items;
     }
+
+    public void setItems(String item) {
+        this.items.add(item);
+    }
     
     public void healthHP(int hp) {
         if (this.currenthp + hp >= this.maxhp) {
@@ -86,7 +90,7 @@ public class MainCharacter {
     }
     
     public void move(double deltaX, double deltaY) {
-        this.x += deltaX;
-        this.y += deltaY;
+        this.x = deltaX;
+        this.y = deltaY;
     }
 }

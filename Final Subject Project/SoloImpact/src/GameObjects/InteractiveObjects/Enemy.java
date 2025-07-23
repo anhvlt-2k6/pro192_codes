@@ -20,4 +20,14 @@ public class Enemy extends GameObjects {
     public void updateName(String name) {
         this.name = name;
     }
+    
+    @Override
+    public int getHp() {
+        return this.hp;
+    }
+
+    @Override
+    public int getTypeofNPC() {
+        return -1;
+    }
 }

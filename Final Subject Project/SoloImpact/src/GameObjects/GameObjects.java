@@ -1,16 +1,12 @@
 package GameObjects;
 
-public class GameObjects {
+public abstract class GameObjects {
     private int id;
     protected double x; // position
     protected double y; // -_-
     protected String name;
     protected boolean isInteractive;
     
-    
-    /*
-    * Only for comparator
-    */
     public GameObjects() {
         this.id = 0;
         this.x = 0;
@@ -27,9 +23,10 @@ public class GameObjects {
         this.isInteractive = isInteractive;
     }
 
-    public void updateName(String name) {
-        
-    }
+    abstract public void updateName(String name);
+    abstract public int getHp();
+    abstract public void getAttack(int attack);
+    abstract public int getTypeofNPC();
     
     public int getId() {
         return this.id;
@@ -50,4 +47,5 @@ public class GameObjects {
     public boolean isInteractive() {
         return this.isInteractive;
     }
+
 }
