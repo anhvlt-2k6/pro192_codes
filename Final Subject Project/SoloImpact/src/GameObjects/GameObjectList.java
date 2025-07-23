@@ -1,7 +1,6 @@
 package GameObjects;
 
 import GameObjects.InteractiveObjects.Enemy;
-import GameObjects.InteractiveObjects.FriendlyNPC;
 
 import java.util.ArrayList;
 
@@ -31,19 +30,17 @@ public class GameObjectList extends ArrayList<GameObjects>{
         return ret;
     }
     
-    // location of the arraylist
-    public int atLocation(double charx, double chary) {
-        final double EPS = 1e-6;         // tolerance for comparing doubles
-        int index = 0;
-
-        for (GameObjects goComp : this) {
-            if (Math.abs(goComp.getX() - charx) < EPS && Math.abs(goComp.getY() - chary) < EPS) {
-                return index;
+    // location of the arraylist (if the arraylist is not null it should start with 0, if not found then return -1; if null then ignore)
+    public int atLocation(double x, double y) {
+        
+        for (int i = 0; i < this.size(); i++) {
+            GameObjects go = this.get(i);
+            if (Double.compare(go.getX(), x) == 0 && Double.compare(go.getY(), y) == 0) {
+                return i;
             }
-            
-            index++;
         }
-
+        
         return -1;
     }
+
 }

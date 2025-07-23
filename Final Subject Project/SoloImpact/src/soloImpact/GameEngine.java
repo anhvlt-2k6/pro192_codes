@@ -17,7 +17,7 @@ public class GameEngine {
     GameObjectList objects;
     
     public void startGame() {
-        System.out.print("Please enter a name for your character:");
+        System.out.print("Please enter a name for your character: ");
         String mainName = sc.nextLine();
         hero = new MainCharacter(0, mainName, 100, 10, 0.0, 0.0);
         
@@ -46,14 +46,18 @@ public class GameEngine {
         }
         
         this.loop();
+        
+        // close game
+        objects.removeAll(objects);
+        sc.close();
     }
     
     public void loop() {
         while (true) {
             System.out.print(
                   "Main menu:\n"
-                + "1. Move the main character"
-                + "2. See all initialized objects"
+                + "1. Move the main character\n"
+                + "2. See all initialized objects\n"
                 + "Your choice: ");
             
             int choice = sc.nextInt();
@@ -73,12 +77,14 @@ public class GameEngine {
     public void move() {
         System.out.print("Enter the x: ");
         double x = sc.nextDouble();
-
+        sc.nextLine(); // safe consumption
+        
         System.out.print("Enter the y: ");
         double y = sc.nextDouble();
-
+        sc.nextLine(); // safe consumption
+        
         hero.move(x, y);
-        System.out.print(String.format("Current location of hero is: %.2f %.2f", hero.getX(), hero.getY()));
+        System.out.print(String.format("Current location of hero is: %.2f %.2f\n", hero.getX(), hero.getY()));
         
         int loc = objects.atLocation(hero.getX(), hero.getY());
         
@@ -87,7 +93,7 @@ public class GameEngine {
                 System.out.print("Enemy is detected. Wanna combat ('n' to reject, else to proceed)?: ");
                 String input = sc.nextLine();
                 
-                if (input.toLowerCase().charAt(0) == 'n') {
+                if (input.equals("n")) {
                     return;
                 }
 
@@ -100,9 +106,9 @@ public class GameEngine {
                 System.out.println("Emeny has been elimated!");
             } else if (objects.get(loc) instanceof FriendlyNPC) {
                 System.out.print("Hey it cool NPC. Wanna interact ('n' to reject, else to proceed)?: ");
-                String input = sc.nextLine();
+                String input = sc.nextLine().trim();
                 
-                if (input.toLowerCase().charAt(0) == 'n') {
+                if (input.equalsIgnoreCase("n")) {
                     return;
                 }
                 
