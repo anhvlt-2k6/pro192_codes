@@ -73,22 +73,6 @@ public class MainCharacter {
         this.items.add(item);
     }
     
-    public void healthHP(int hp) {
-        if (this.currenthp + hp >= this.maxhp) {
-            this.currenthp = this.maxhp;
-        } else {
-            this.currenthp += hp;
-        }
-    }
-    
-    public void getAttack(int hp) {
-        if (this.currenthp - hp <= 0) {
-            this.currenthp = 0;
-        } else {
-            this.currenthp -= hp;
-        }
-    }
-    
     public void move(double deltaX, double deltaY) {
         this.x = deltaX;
         this.y = deltaY;
