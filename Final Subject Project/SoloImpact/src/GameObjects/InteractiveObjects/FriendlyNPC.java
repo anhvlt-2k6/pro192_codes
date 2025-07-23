@@ -7,7 +7,7 @@ public class FriendlyNPC extends GameObjects {
     /*
     Type of friendly NPC
     1. Neutral (No shop)
-    2. Farmer - has food or hp boost
+    2. Farmer - has food
     3. Entrepreneur - has weapon
     */
     
@@ -18,12 +18,6 @@ public class FriendlyNPC extends GameObjects {
         this.typeofNPC = typeofNPC;
     }
     
-    @Override
-    public void updatePosition(double x, double y) {
-        super.x = x;
-        super.y = y;
-    }
-
     @Override
     public void updateName(String name) {
         super.name = name;

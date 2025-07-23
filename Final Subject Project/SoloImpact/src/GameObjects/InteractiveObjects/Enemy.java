@@ -17,12 +17,6 @@ public class Enemy extends GameObjects {
     }
     
     @Override
-    public void updatePosition(double x, double y) {
-        this.x = x;
-        this.y = y;
-    }
-
-    @Override
     public void updateName(String name) {
         this.name = name;
     }
