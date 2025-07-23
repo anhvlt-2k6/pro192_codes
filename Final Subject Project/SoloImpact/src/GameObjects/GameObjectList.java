@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class GameObjectList extends ArrayList<GameObjects>{
 
+    // https://stackoverflow.com/questions/14274480/static-final-long-serialversionuid-1l
     private static final long serialVersionUID = 07232025L;
 
     public String displayAll() {
